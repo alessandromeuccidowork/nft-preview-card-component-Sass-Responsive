@@ -1,0 +1,180 @@
+// Colors-Primary
+
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Colors-Neutral
+
+$very-dark-blue-main : hsl(217, 54%, 11%);  /* (main BG) */
+$very-dark-blue-card : hsl(216, 50%, 16%);  /* (card BG) */
+$very-dark-blue-line : hsl(215, 32%, 27%);  /* (line) */
+$white: hsl(0, 0%, 100%);
+
+// Typography
+$font-card :  'Outfit', sans-serif;
+$paragraph : 1.125rem;
+
+
+body {
+    background-color: $very-dark-blue-main;
+    text-align: center;
+    font-family: $font-card;
+    position: relative;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    display: inline-block;
+    margin: 9rem 0;
+    width: 100%;
+
+    .header, article, hr {
+        margin: 0 6.4%;
+    }
+
+    .container {
+        background-color: $very-dark-blue-card;
+        display: inline-block;
+        border-radius: 0.8rem;
+        width: 100%;
+        max-width: 23rem;
+
+    }
+
+    // p {
+    //     font-size: $paragraph;
+    // }
+}
+
+.card-image {
+    position: relative;
+    margin: 0;
+
+    .container-view {
+        // display: none;
+        position: absolute;        
+        background-color: hsl(178, 100%, 50%, 50%);
+        border-radius: 0.5rem;
+        width: 87.3%;
+        height: 92.1%;
+        top: 6.6%;
+        left: 1.425rem;
+        opacity: 0;
+        transition: all 1s;
+        // margin: 6.4%;
+        // top: 43.238%;
+        // left: 43.48%;
+
+        svg {
+            position: absolute;
+            top: 40.238%;
+            left: 43.260%;
+        }
+    } 
+}
+
+.container-view:hover {
+    opacity: 0.75;
+}
+
+.container-view:active {
+    opacity: 1;
+}
+
+.nft-img {
+    margin-top: 6.4%;
+    width: 87.3%;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+
+.header {
+    position: relative;
+    color: $white;
+    text-align: left;
+    transition: all 1s;
+}
+
+.header:hover {
+    color: $Cyan;
+}
+
+.description {
+    text-align: left;
+    color: $Soft-blue;
+    font-size: $paragraph;
+    font-weight: 300;
+}
+
+.details {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    p {
+        margin: 0 0 1.125rem 0.4rem;
+    }
+
+    .price {
+        display: flex;
+        color: $Cyan;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .deadline {
+        display: flex;
+        color: $Soft-blue;
+        font-size: 1rem;
+
+    }
+}
+
+hr {
+    border: none;
+    background-color: $Soft-blue;
+    height: 0.08px;
+}
+
+.creator {
+    display: flex;
+    margin: 4.4% 6.4% 8.4% 6.4%;
+
+    .creator-image {
+        height: 30px;
+        border: solid 0.09rem $white;
+        border-radius: 100%;
+    }
+
+    p {
+        margin: 2.2% 0 0 4.4%;
+        bottom: 5px;
+        color: $Soft-blue;
+
+        span {
+            color: $white;
+            transition: all 1s;
+        }
+    }
+}
+
+.creator-name:hover {
+    color: $Cyan;
+}
+
+// Attribution
+.attribution { 
+    font-size: $paragraph; 
+    text-align: center; 
+    display: block;
+    color: $very-dark-blue-line;
+    position: relative;
+    
+    a { 
+        display: inline-block;
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+

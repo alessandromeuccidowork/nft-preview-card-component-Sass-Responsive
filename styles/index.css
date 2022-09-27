@@ -1,0 +1,142 @@
+/* (main BG) */
+/* (card BG) */
+/* (line) */
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  position: relative;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  display: inline-block;
+  margin: 9rem 0;
+  width: 100%;
+}
+main .header, main article, main hr {
+  margin: 0 6.4%;
+}
+main .container {
+  background-color: hsl(216deg, 50%, 16%);
+  display: inline-block;
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 23rem;
+}
+
+.card-image {
+  position: relative;
+  margin: 0;
+}
+.card-image .container-view {
+  position: absolute;
+  background-color: hsla(178deg, 100%, 50%, 0.5);
+  border-radius: 0.5rem;
+  width: 87.3%;
+  height: 92.1%;
+  top: 6.6%;
+  left: 1.425rem;
+  opacity: 0;
+  transition: all 1s;
+}
+.card-image .container-view svg {
+  position: absolute;
+  top: 40.238%;
+  left: 43.26%;
+}
+
+.container-view:hover {
+  opacity: 0.75;
+}
+
+.container-view:active {
+  opacity: 1;
+}
+
+.nft-img {
+  margin-top: 6.4%;
+  width: 87.3%;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+.header {
+  position: relative;
+  color: hsl(0deg, 0%, 100%);
+  text-align: left;
+  transition: all 1s;
+}
+
+.header:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.description {
+  text-align: left;
+  color: hsl(215deg, 51%, 70%);
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.details p {
+  margin: 0 0 1.125rem 0.4rem;
+}
+.details .price {
+  display: flex;
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.details .deadline {
+  display: flex;
+  color: hsl(215deg, 51%, 70%);
+  font-size: 1rem;
+}
+
+hr {
+  border: none;
+  background-color: hsl(215deg, 51%, 70%);
+  height: 0.08px;
+}
+
+.creator {
+  display: flex;
+  margin: 4.4% 6.4% 8.4% 6.4%;
+}
+.creator .creator-image {
+  height: 30px;
+  border: solid 0.09rem hsl(0deg, 0%, 100%);
+  border-radius: 100%;
+}
+.creator p {
+  margin: 2.2% 0 0 4.4%;
+  bottom: 5px;
+  color: hsl(215deg, 51%, 70%);
+}
+.creator p span {
+  color: hsl(0deg, 0%, 100%);
+  transition: all 1s;
+}
+
+.creator-name:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.attribution {
+  font-size: 1.125rem;
+  text-align: center;
+  display: block;
+  color: hsl(215deg, 32%, 27%);
+  position: relative;
+}
+.attribution a {
+  display: inline-block;
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=index.css.map */
